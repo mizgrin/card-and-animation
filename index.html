@@ -27,312 +27,316 @@
 	</button>
 
 	<div class="container">
-		<!-- Sorry Section (Visible on load) -->
-		<div id="sorrySection" class="section active">
-			<!-- Mascot Container -->
-			<div class="dino-mascot-container" id="dinoMascotContainer">
-				<img src="assets/images/dino.PNG" alt="Cute Dinosaur" class="dino-mascot-img" />
-				<div class="dino-speech-bubble" id="dinoSpeechBubble">
-					Dear Mutu!! I'm sorry... Please open my letters! 🥺
-				</div>
+		<!-- Mascot Container centered for both -->
+		<div class="dino-mascot-container" id="dinoMascotContainer">
+			<img src="assets/images/dino.PNG" alt="Cute Dinosaur" class="dino-mascot-img" />
+			<div class="dino-speech-bubble" id="dinoSpeechBubble">
+				Dear Mutu!! I'm sorry... Please unmute me on instagram . Pilich🥺
 			</div>
-
-			<!-- Read status counter -->
-			<div class="sorry-progress" id="sorryProgress">
-				Messages Read: <span id="sorryCount">0</span>/3
-			</div>
-
-			<!-- Envelope Container for side chevrons -->
-			<div class="envelope-container">
-				<div class="envelope-wrapper" id="sorryEnvelopeWrapper">
-					<div class="back"></div>
-
-					<div class="cards">
-						<div class="card" data-index="1">
-							<div class="card-content">
-								<!-- Dinosaur SVG 1: Sad Dino -->
-								<div class="dino-svg">
-									<svg viewBox="0 0 100 100" width="80" height="80">
-										<path
-											d="M35 75 C 35 45, 50 35, 70 35 C 80 35, 85 45, 80 55 C 75 65, 80 78, 70 82 C 60 85, 45 85, 35 75 Z"
-											fill="#8bc34a" />
-										<path d="M35 75 C 20 75, 15 65, 20 60 C 25 60, 30 70, 35 75 Z" fill="#8bc34a" />
-										<path d="M50 37 L52 28 L57 36 Z" fill="#81c784" />
-										<path d="M60 34 L62 25 L67 33 Z" fill="#81c784" />
-										<path d="M70 34 L72 25 L77 33 Z" fill="#81c784" />
-										<path d="M 62 48 C 64 52, 68 52, 70 48" stroke="#333" stroke-width="2.5"
-											fill="none" stroke-linecap="round" />
-										<path d="M 74 48 C 76 52, 80 52, 82 48" stroke="#333" stroke-width="2.5"
-											fill="none" stroke-linecap="round" />
-										<circle cx="58" cy="52" r="3.5" fill="#e91e63" opacity="0.4" />
-										<circle cx="82" cy="52" r="3.5" fill="#e91e63" opacity="0.4" />
-										<path d="M 68 57 Q 72 54 76 57" stroke="#333" stroke-width="2" fill="none"
-											stroke-linecap="round" />
-										<path d="M 60 54 Q 57 58 60 61 Q 63 58 60 54" fill="#00bcd4" />
-									</svg>
-								</div>
-								<h2>I'm So Sorry! 🥺</h2>
-								<p>
-									I never meant to make you sad. My world is dark without your smile. Please forgive
-									me?
-								</p>
-							</div>
-						</div>
-
-						<div class="card" data-index="2">
-							<div class="card-content">
-								<!-- Dinosaur SVG 2: Clumsy Dino -->
-								<div class="dino-svg">
-									<svg viewBox="0 0 100 100" width="80" height="80">
-										<path
-											d="M35 75 C 35 45, 50 35, 70 35 C 80 35, 85 45, 80 55 C 75 65, 80 78, 70 82 C 60 85, 45 85, 35 75 Z"
-											fill="#a5d6a7" />
-										<path d="M35 75 C 20 75, 15 65, 20 60 C 25 60, 30 70, 35 75 Z" fill="#a5d6a7" />
-										<path d="M50 37 L52 28 L57 36 Z" fill="#c8e6c9" />
-										<path d="M60 34 L62 25 L67 33 Z" fill="#c8e6c9" />
-										<path d="M 62 46 L 66 50 M 66 46 L 62 50" stroke="#333" stroke-width="2.5"
-											stroke-linecap="round" />
-										<path d="M 74 46 L 78 50 M 78 46 L 74 50" stroke="#333" stroke-width="2.5"
-											stroke-linecap="round" />
-										<circle cx="58" cy="54" r="5" fill="#ff4081" opacity="0.5" />
-										<circle cx="82" cy="54" r="5" fill="#ff4081" opacity="0.5" />
-										<path d="M 68 57 Q 72 61 76 57" stroke="#333" stroke-width="2" fill="none"
-											stroke-linecap="round" />
-										<rect x="74" y="60" width="12" height="5" rx="1.5" transform="rotate(-15 74 60)"
-											fill="#ffe0b2" stroke="#ffb74d" stroke-width="0.5" />
-									</svg>
-								</div>
-								<h2>Forgive Me? 🦖</h2>
-								<p>
-									I can be a little clumsy sometimes, like a big silly dinosaur. But my love for you
-									is giant!
-								</p>
-							</div>
-						</div>
-
-						<div class="card" data-index="3">
-							<div class="card-content">
-								<!-- Dinosaur SVG 3: Pleading Dino -->
-								<div class="dino-svg">
-									<svg viewBox="0 0 100 100" width="80" height="80">
-										<path
-											d="M35 75 C 35 45, 50 35, 70 35 C 80 35, 85 45, 80 55 C 75 65, 80 78, 70 82 C 60 85, 45 85, 35 75 Z"
-											fill="#80cbc4" />
-										<path d="M35 75 C 20 75, 15 65, 20 60 C 25 60, 30 70, 35 75 Z" fill="#80cbc4" />
-										<path d="M50 37 L52 28 L57 36 Z" fill="#b2dfdb" />
-										<path d="M60 34 L62 25 L67 33 Z" fill="#b2dfdb" />
-										<path d="M 62 48 Q 66 44 70 48" stroke="#333" stroke-width="3" fill="none"
-											stroke-linecap="round" />
-										<path d="M 74 48 Q 78 44 82 48" stroke="#333" stroke-width="3" fill="none"
-											stroke-linecap="round" />
-										<circle cx="58" cy="53" r="3.5" fill="#ff8a80" opacity="0.6" />
-										<circle cx="82" cy="53" r="3.5" fill="#ff8a80" opacity="0.6" />
-										<path d="M 68 54 Q 72 58 76 54" stroke="#333" stroke-width="2.5" fill="none"
-											stroke-linecap="round" />
-										<path
-											d="M 52 64 C 52 64, 47 59, 42 64 C 37 69, 52 84, 52 84 C 52 84, 67 69, 62 64 C 57 59, 52 64, 52 64 Z"
-											fill="#ff5252" />
-									</svg>
-								</div>
-								<h2>No More Grumpy! 💕</h2>
-								<p>
-									I promise to fill your days with cuddles, kisses, and all the happiness you deserve.
-									I love you!
-								</p>
-							</div>
-						</div>
-					</div>
-
-					<div class="front-left-right"></div>
-					<div class="front-bottom"></div>
-					<div class="flap"></div>
-
-					<div class="overlay" id="sorryCardOverlay" aria-hidden="true">
-						<div class="overlay-inner" id="sorryOverlayInner">
-							<h3 id="sorryOverlayTitle"></h3>
-							<p id="sorryOverlayText"></p>
-						</div>
-					</div>
-				</div>
-
-				<!-- Chevron controls placed beside cards -->
-				<button id="sorryPrevBtn" class="control prev-chevron-btn" aria-label="Previous sorry card">
-					<svg viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="2.5"
-						stroke-linecap="round" stroke-linejoin="round">
-						<polyline points="15 18 9 12 15 6"></polyline>
-					</svg>
-				</button>
-				<button id="sorryNextBtn" class="control next-chevron-btn" aria-label="Next sorry card">
-					<svg viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="2.5"
-						stroke-linecap="round" stroke-linejoin="round">
-						<polyline points="9 18 15 12 9 6"></polyline>
-					</svg>
-				</button>
-			</div>
-
-			<button id="sorryOpenBtn" class="open-btn" aria-label="Open sorry envelope">
-				Open Sorry Envelope <span class="arrow">➔</span>
-			</button>
-
-			<button id="sorryCloseBtn" class="control close-btn" aria-label="Close sorry envelope">
-				Close Envelope
-			</button>
 		</div>
 
-		<!-- Main Envelope Section (Visible on load) -->
-		<div id="mainSection" class="section active">
-			<!-- Title or Small Header for Main Envelope to align visually with Sorry mascot -->
-			<div class="love-header"
-				style="height: 146px; display: flex; flex-direction: column; justify-content: flex-end; margin-bottom: 20px;">
-				<h2
-					style="color: var(--text-color); font-weight: 600; font-size: 18px; text-align: center; margin-bottom: 8px;">
-					My Love Letter ❤️</h2>
-				<p style="color: var(--text-muted); font-size: 13px; text-align: center; margin-bottom: 0;">Open to see
-					the message...</p>
-			</div>
+		<div class="envelopes-wrapper">
+			<!-- Sorry Section (Visible on load) -->
+			<div id="sorrySection" class="section active">
+				<!-- Read status counter -->
+				<!-- <div class="sorry-progress" id="sorryProgress">
+					Messages Read: <span id="sorryCount">0</span>/3
+				</div> -->
 
-			<!-- Envelope Container for side chevrons -->
-			<div class="envelope-container">
-				<div class="envelope-wrapper" id="envelopeWrapper">
-					<div class="back"></div>
+				<!-- Envelope Container for side chevrons -->
+				<div class="envelope-container">
+					<div class="envelope-wrapper" id="sorryEnvelopeWrapper">
+						<div class="back"></div>
 
-					<div class="cards">
-						<div class="card" data-index="1">
-							<div class="card-content">
-								<!-- Dinosaur SVG 4: Love Dino Hugging Heart -->
-								<div class="dino-svg">
-									<svg viewBox="0 0 100 100" width="80" height="80">
-										<path
-											d="M35 75 C 35 45, 50 35, 70 35 C 80 35, 85 45, 80 55 C 75 65, 80 78, 70 82 C 60 85, 45 85, 35 75 Z"
-											fill="#d4e157" />
-										<path d="M35 75 C 20 75, 15 65, 20 60 C 25 60, 30 70, 35 75 Z" fill="#d4e157" />
-										<path d="M50 37 L52 28 L57 36 Z" fill="#c5e1a5" />
-										<path d="M60 34 L62 25 L67 33 Z" fill="#c5e1a5" />
-										<circle cx="65" cy="45" r="3.5" fill="#333" />
-										<circle cx="77" cy="45" r="3.5" fill="#333" />
-										<circle cx="61" cy="50" r="3" fill="#ff4081" opacity="0.5" />
-										<circle cx="81" cy="50" r="3" fill="#ff4081" opacity="0.5" />
-										<path d="M 68 51 Q 71 55 74 51" stroke="#333" stroke-width="2" fill="none"
-											stroke-linecap="round" />
-										<path
-											d="M 45 58 C 45 58, 38 52, 32 58 C 26 64, 45 82, 45 82 C 45 82, 64 64, 58 58 C 52 52, 45 58, 45 58 Z"
-											fill="#ff4081" />
-										<path d="M 33 66 Q 38 68 42 66" stroke="#d4e157" stroke-width="4"
-											stroke-linecap="round" fill="none" />
-										<path d="M 57 66 Q 52 68 48 66" stroke="#d4e157" stroke-width="4"
-											stroke-linecap="round" fill="none" />
-									</svg>
+						<div class="cards">
+							<div class="card" data-index="1">
+								<div class="card-content">
+									<!-- Dinosaur SVG 1: Sad Dino -->
+									<div class="dino-svg">
+										<svg viewBox="0 0 100 100" width="80" height="80">
+											<path
+												d="M35 75 C 35 45, 50 35, 70 35 C 80 35, 85 45, 80 55 C 75 65, 80 78, 70 82 C 60 85, 45 85, 35 75 Z"
+												fill="#8bc34a" />
+											<path d="M35 75 C 20 75, 15 65, 20 60 C 25 60, 30 70, 35 75 Z"
+												fill="#8bc34a" />
+											<path d="M50 37 L52 28 L57 36 Z" fill="#81c784" />
+											<path d="M60 34 L62 25 L67 33 Z" fill="#81c784" />
+											<path d="M70 34 L72 25 L77 33 Z" fill="#81c784" />
+											<path d="M 62 48 C 64 52, 68 52, 70 48" stroke="#333" stroke-width="2.5"
+												fill="none" stroke-linecap="round" />
+											<path d="M 74 48 C 76 52, 80 52, 82 48" stroke="#333" stroke-width="2.5"
+												fill="none" stroke-linecap="round" />
+											<circle cx="58" cy="52" r="3.5" fill="#e91e63" opacity="0.4" />
+											<circle cx="82" cy="52" r="3.5" fill="#e91e63" opacity="0.4" />
+											<path d="M 68 57 Q 72 54 76 57" stroke="#333" stroke-width="2" fill="none"
+												stroke-linecap="round" />
+											<path d="M 60 54 Q 57 58 60 61 Q 63 58 60 54" fill="#00bcd4" />
+										</svg>
+									</div>
+									<h2>I'm So Sorry! 🥺</h2>
+									<p>
+										I never meant to make you sad. My world is dark without your smile. Please call
+										me
+										or text me soon. 🥺
+									</p>
 								</div>
-								<h2>My One and Only</h2>
-								<p>
-									With you, every little moment becomes a memory I treasure. I
-									love you more each day.
-								</p>
+							</div>
+
+							<div class="card" data-index="2">
+								<div class="card-content">
+									<!-- Dinosaur SVG 2: Clumsy Dino -->
+									<div class="dino-svg">
+										<svg viewBox="0 0 100 100" width="80" height="80">
+											<path
+												d="M35 75 C 35 45, 50 35, 70 35 C 80 35, 85 45, 80 55 C 75 65, 80 78, 70 82 C 60 85, 45 85, 35 75 Z"
+												fill="#a5d6a7" />
+											<path d="M35 75 C 20 75, 15 65, 20 60 C 25 60, 30 70, 35 75 Z"
+												fill="#a5d6a7" />
+											<path d="M50 37 L52 28 L57 36 Z" fill="#c8e6c9" />
+											<path d="M60 34 L62 25 L67 33 Z" fill="#c8e6c9" />
+											<path d="M 62 46 L 66 50 M 66 46 L 62 50" stroke="#333" stroke-width="2.5"
+												stroke-linecap="round" />
+											<path d="M 74 46 L 78 50 M 78 46 L 74 50" stroke="#333" stroke-width="2.5"
+												stroke-linecap="round" />
+											<circle cx="58" cy="54" r="5" fill="#ff4081" opacity="0.5" />
+											<circle cx="82" cy="54" r="5" fill="#ff4081" opacity="0.5" />
+											<path d="M 68 57 Q 72 61 76 57" stroke="#333" stroke-width="2" fill="none"
+												stroke-linecap="round" />
+											<rect x="74" y="60" width="12" height="5" rx="1.5"
+												transform="rotate(-15 74 60)" fill="#ffe0b2" stroke="#ffb74d"
+												stroke-width="0.5" />
+										</svg>
+									</div>
+									<h2>Forgive Me? 🦖</h2>
+									<p>
+										I hope your mood fixes soon and i can see your smiling face soon
+									</p>
+								</div>
+							</div>
+
+							<div class="card" data-index="3">
+								<div class="card-content">
+									<!-- Dinosaur SVG 3: Pleading Dino -->
+									<div class="dino-svg">
+										<svg viewBox="0 0 100 100" width="80" height="80">
+											<path
+												d="M35 75 C 35 45, 50 35, 70 35 C 80 35, 85 45, 80 55 C 75 65, 80 78, 70 82 C 60 85, 45 85, 35 75 Z"
+												fill="#80cbc4" />
+											<path d="M35 75 C 20 75, 15 65, 20 60 C 25 60, 30 70, 35 75 Z"
+												fill="#80cbc4" />
+											<path d="M50 37 L52 28 L57 36 Z" fill="#b2dfdb" />
+											<path d="M60 34 L62 25 L67 33 Z" fill="#b2dfdb" />
+											<path d="M 62 48 Q 66 44 70 48" stroke="#333" stroke-width="3" fill="none"
+												stroke-linecap="round" />
+											<path d="M 74 48 Q 78 44 82 48" stroke="#333" stroke-width="3" fill="none"
+												stroke-linecap="round" />
+											<circle cx="58" cy="53" r="3.5" fill="#ff8a80" opacity="0.6" />
+											<circle cx="82" cy="53" r="3.5" fill="#ff8a80" opacity="0.6" />
+											<path d="M 68 54 Q 72 58 76 54" stroke="#333" stroke-width="2.5" fill="none"
+												stroke-linecap="round" />
+											<path
+												d="M 52 64 C 52 64, 47 59, 42 64 C 37 69, 52 84, 52 84 C 52 84, 67 69, 62 64 C 57 59, 52 64, 52 64 Z"
+												fill="#ff5252" />
+										</svg>
+									</div>
+									<h2>I love you mero mutu 💕</h2>
+									<p>
+										I am waiting to see you mutu . I miss u
+										I love you!
+									</p>
+								</div>
 							</div>
 						</div>
 
-						<div class="card" data-index="2">
-							<div class="card-content">
-								<!-- Dinosaur SVG 5: Sunrise/Adventure Dino -->
-								<div class="dino-svg">
-									<svg viewBox="0 0 100 100" width="80" height="80">
-										<circle cx="30" cy="35" r="14" fill="#fff9c4" />
-										<circle cx="30" cy="35" r="11" fill="#ffe082" />
-										<path
-											d="M35 75 C 35 45, 50 35, 70 35 C 80 35, 85 45, 80 55 C 75 65, 80 78, 70 82 C 60 85, 45 85, 35 75 Z"
-											fill="#4db6ac" />
-										<path d="M35 75 C 20 75, 15 65, 20 60 C 25 60, 30 70, 35 75 Z" fill="#4db6ac" />
-										<path d="M50 37 L52 28 L57 36 Z" fill="#80cbc4" />
-										<path d="M60 34 L62 25 L67 33 Z" fill="#80cbc4" />
-										<path d="M 61 46 Q 65 42 69 46" stroke="#333" stroke-width="2.5" fill="none"
-											stroke-linecap="round" />
-										<path d="M 74 46 L 80 46" stroke="#333" stroke-width="2.5"
-											stroke-linecap="round" />
-										<circle cx="58" cy="51" r="3" fill="#e91e63" opacity="0.4" />
-										<circle cx="81" cy="51" r="3" fill="#e91e63" opacity="0.4" />
-										<path d="M 67 51 Q 71 56 75 51 Z" fill="#333" />
-										<path d="M 58 62 Q 50 56 46 62" stroke="#4db6ac" stroke-width="4.5"
-											stroke-linecap="round" fill="none" />
-									</svg>
-								</div>
-								<h2>Always Yours</h2>
-								<p>
-									Every sunrise with you is a promise of new joys. Thank you for
-									being my safe place and my wild adventure.
-								</p>
-							</div>
-						</div>
+						<div class="front-left-right"></div>
+						<div class="front-bottom"></div>
+						<div class="flap"></div>
 
-						<div class="card" data-index="3">
-							<div class="card-content">
-								<!-- Dinosaur SVG 6: Sparkling Dino -->
-								<div class="dino-svg">
-									<svg viewBox="0 0 100 100" width="80" height="80">
-										<path
-											d="M35 75 C 35 45, 50 35, 70 35 C 80 35, 85 45, 80 55 C 75 65, 80 78, 70 82 C 60 85, 45 85, 35 75 Z"
-											fill="#ffb74d" />
-										<path d="M35 75 C 20 75, 15 65, 20 60 C 25 60, 30 70, 35 75 Z" fill="#ffb74d" />
-										<path d="M50 37 L52 28 L57 36 Z" fill="#ffe082" />
-										<path d="M60 34 L62 25 L67 33 Z" fill="#ffe082" />
-										<path d="M 61 46 Q 65 42 69 46" stroke="#333" stroke-width="2.5" fill="none"
-											stroke-linecap="round" />
-										<path d="M 73 46 Q 77 42 81 46" stroke="#333" stroke-width="2.5" fill="none"
-											stroke-linecap="round" />
-										<circle cx="58" cy="51" r="3.5" fill="#f44336" opacity="0.5" />
-										<circle cx="81" cy="51" r="3.5" fill="#f44336" opacity="0.5" />
-										<path d="M 66 52 Q 71 58 76 52" stroke="#333" stroke-width="2.5" fill="none"
-											stroke-linecap="round" />
-										<path
-											d="M 86 28 C 86 28, 83 25, 80 28 C 77 31, 86 39, 86 39 C 86 39, 95 31, 92 28 C 89 25, 86 28, 86 28 Z"
-											fill="#e91e63" transform="scale(0.5) translate(40, -10)" />
-										<path
-											d="M 86 28 C 86 28, 83 25, 80 28 C 77 31, 86 39, 86 39 C 86 39, 95 31, 92 28 C 89 25, 86 28, 86 28 Z"
-											fill="#ff4081" transform="scale(0.3) translate(140, 40)" />
-									</svg>
-								</div>
-								<h2>My Sweetheart</h2>
-								<p>
-									Your smile is my favorite melody. I fall for you again and again
-									— thank you for being you.
-								</p>
+						<div class="overlay" id="sorryCardOverlay" aria-hidden="true">
+							<div class="overlay-inner" id="sorryOverlayInner">
+								<h3 id="sorryOverlayTitle"></h3>
+								<p id="sorryOverlayText"></p>
 							</div>
 						</div>
 					</div>
 
-					<div class="front-left-right"></div>
-					<div class="front-bottom"></div>
-					<div class="flap"></div>
-
-					<div class="overlay" id="cardOverlay" aria-hidden="true">
-						<div class="overlay-inner" id="overlayInner">
-							<h3 id="overlayTitle"></h3>
-							<p id="overlayText"></p>
-						</div>
-					</div>
+					<!-- Chevron controls placed beside cards -->
+					<button id="sorryPrevBtn" class="control prev-chevron-btn" aria-label="Previous sorry card">
+						<svg viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor"
+							stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+							<polyline points="15 18 9 12 15 6"></polyline>
+						</svg>
+					</button>
+					<button id="sorryNextBtn" class="control next-chevron-btn" aria-label="Next sorry card">
+						<svg viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor"
+							stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+							<polyline points="9 18 15 12 9 6"></polyline>
+						</svg>
+					</button>
 				</div>
 
-				<!-- Chevron controls placed beside cards -->
-				<button id="prevBtn" class="control prev-chevron-btn" aria-label="Previous card">
-					<svg viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="2.5"
-						stroke-linecap="round" stroke-linejoin="round">
-						<polyline points="15 18 9 12 15 6"></polyline>
-					</svg>
+				<button id="sorryOpenBtn" class="open-btn" aria-label="Open sorry envelope">
+					Open Sorry Envelope <span class="arrow">➔</span>
 				</button>
-				<button id="nextBtn" class="control next-chevron-btn" aria-label="Next card">
-					<svg viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="2.5"
-						stroke-linecap="round" stroke-linejoin="round">
-						<polyline points="9 18 15 12 9 6"></polyline>
-					</svg>
+
+				<button id="sorryCloseBtn" class="control close-btn" aria-label="Close sorry envelope">
+					Close Envelope
 				</button>
 			</div>
 
-			<button id="openBtn" class="open-btn" aria-label="Open envelope">
-				Click here to open envelope <span class="arrow">➔</span>
-			</button>
+			<!-- Main Envelope Section (Visible on load) -->
+			<div id="mainSection" class="section active">
+				<!-- Title or Small Header for Main Envelope -->
+				<div class="love-header">
+					<h2>My Love Letter ❤️</h2>
+					<p>Open to see the message...</p>
+				</div>
 
-			<button id="closeBtn" class="control close-btn" aria-label="Close envelope">
-				Close Envelope
-			</button>
+				<!-- Envelope Container for side chevrons -->
+				<div class="envelope-container">
+					<div class="envelope-wrapper" id="envelopeWrapper">
+						<div class="back"></div>
+
+						<div class="cards">
+							<div class="card" data-index="1">
+								<div class="card-content">
+									<!-- Dinosaur SVG 4: Love Dino Hugging Heart -->
+									<div class="dino-svg">
+										<svg viewBox="0 0 100 100" width="80" height="80">
+											<path
+												d="M35 75 C 35 45, 50 35, 70 35 C 80 35, 85 45, 80 55 C 75 65, 80 78, 70 82 C 60 85, 45 85, 35 75 Z"
+												fill="#d4e157" />
+											<path d="M35 75 C 20 75, 15 65, 20 60 C 25 60, 30 70, 35 75 Z"
+												fill="#d4e157" />
+											<path d="M50 37 L52 28 L57 36 Z" fill="#c5e1a5" />
+											<path d="M60 34 L62 25 L67 33 Z" fill="#c5e1a5" />
+											<circle cx="65" cy="45" r="3.5" fill="#333" />
+											<circle cx="77" cy="45" r="3.5" fill="#333" />
+											<circle cx="61" cy="50" r="3" fill="#ff4081" opacity="0.5" />
+											<circle cx="81" cy="50" r="3" fill="#ff4081" opacity="0.5" />
+											<path d="M 68 51 Q 71 55 74 51" stroke="#333" stroke-width="2" fill="none"
+												stroke-linecap="round" />
+											<path
+												d="M 45 58 C 45 58, 38 52, 32 58 C 26 64, 45 82, 45 82 C 45 82, 64 64, 58 58 C 52 52, 45 58, 45 58 Z"
+												fill="#ff4081" />
+											<path d="M 33 66 Q 38 68 42 66" stroke="#d4e157" stroke-width="4"
+												stroke-linecap="round" fill="none" />
+											<path d="M 57 66 Q 52 68 48 66" stroke="#d4e157" stroke-width="4"
+												stroke-linecap="round" fill="none" />
+										</svg>
+									</div>
+									<h2>My One and Only</h2>
+									<p>
+										I miss you dherai dherai dherai dherai . I wish i could hug you right now .
+									</p>
+								</div>
+							</div>
+
+							<div class="card" data-index="2">
+								<div class="card-content">
+									<!-- Dinosaur SVG 5: Sunrise/Adventure Dino -->
+									<div class="dino-svg">
+										<svg viewBox="0 0 100 100" width="80" height="80">
+											<circle cx="30" cy="35" r="14" fill="#fff9c4" />
+											<circle cx="30" cy="35" r="11" fill="#ffe082" />
+											<path
+												d="M35 75 C 35 45, 50 35, 70 35 C 80 35, 85 45, 80 55 C 75 65, 80 78, 70 82 C 60 85, 45 85, 35 75 Z"
+												fill="#4db6ac" />
+											<path d="M35 75 C 20 75, 15 65, 20 60 C 25 60, 30 70, 35 75 Z"
+												fill="#4db6ac" />
+											<path d="M50 37 L52 28 L57 36 Z" fill="#80cbc4" />
+											<path d="M60 34 L62 25 L67 33 Z" fill="#80cbc4" />
+											<path d="M 61 46 Q 65 42 69 46" stroke="#333" stroke-width="2.5" fill="none"
+												stroke-linecap="round" />
+											<path d="M 74 46 L 80 46" stroke="#333" stroke-width="2.5"
+												stroke-linecap="round" />
+											<circle cx="58" cy="51" r="3" fill="#e91e63" opacity="0.4" />
+											<circle cx="81" cy="51" r="3" fill="#e91e63" opacity="0.4" />
+											<path d="M 67 51 Q 71 56 75 51 Z" fill="#333" />
+											<path d="M 58 62 Q 50 56 46 62" stroke="#4db6ac" stroke-width="4.5"
+												stroke-linecap="round" fill="none" />
+										</svg>
+									</div>
+									<h2>Always Yours</h2>
+									<p>
+										I promise to love you, pamper you and spoil you with all my love and
+										kisses everyday.
+									</p>
+								</div>
+							</div>
+
+							<div class="card" data-index="3">
+								<div class="card-content">
+									<!-- Dinosaur SVG 6: Sparkling Dino -->
+									<div class="dino-svg">
+										<svg viewBox="0 0 100 100" width="80" height="80">
+											<path
+												d="M35 75 C 35 45, 50 35, 70 35 C 80 35, 85 45, 80 55 C 75 65, 80 78, 70 82 C 60 85, 45 85, 35 75 Z"
+												fill="#ffb74d" />
+											<path d="M35 75 C 20 75, 15 65, 20 60 C 25 60, 30 70, 35 75 Z"
+												fill="#ffb74d" />
+											<path d="M50 37 L52 28 L57 36 Z" fill="#ffe082" />
+											<path d="M60 34 L62 25 L67 33 Z" fill="#ffe082" />
+											<path d="M 61 46 Q 65 42 69 46" stroke="#333" stroke-width="2.5" fill="none"
+												stroke-linecap="round" />
+											<path d="M 73 46 Q 77 42 81 46" stroke="#333" stroke-width="2.5" fill="none"
+												stroke-linecap="round" />
+											<circle cx="58" cy="51" r="3.5" fill="#f44336" opacity="0.5" />
+											<circle cx="81" cy="51" r="3.5" fill="#f44336" opacity="0.5" />
+											<path d="M 66 52 Q 71 58 76 52" stroke="#333" stroke-width="2.5" fill="none"
+												stroke-linecap="round" />
+											<path
+												d="M 86 28 C 86 28, 83 25, 80 28 C 77 31, 86 39, 86 39 C 86 39, 95 31, 92 28 C 89 25, 86 28, 86 28 Z"
+												fill="#e91e63" transform="scale(0.5) translate(40, -10)" />
+											<path
+												d="M 86 28 C 86 28, 83 25, 80 28 C 77 31, 86 39, 86 39 C 86 39, 95 31, 92 28 C 89 25, 86 28, 86 28 Z"
+												fill="#ff4081" transform="scale(0.3) translate(140, 40)" />
+										</svg>
+									</div>
+									<h2>My Sweetheart, Mero mutu</h2>
+									<p>
+										Your smile is my favorite melody. I fall for you again and again
+										— thank you for being you.
+									</p>
+								</div>
+							</div>
+						</div>
+
+						<div class="front-left-right"></div>
+						<div class="front-bottom"></div>
+						<div class="flap"></div>
+
+						<div class="overlay" id="cardOverlay" aria-hidden="true">
+							<div class="overlay-inner" id="overlayInner">
+								<h3 id="overlayTitle"></h3>
+								<p id="overlayText"></p>
+							</div>
+						</div>
+					</div>
+
+					<!-- Chevron controls placed beside cards -->
+					<button id="prevBtn" class="control prev-chevron-btn" aria-label="Previous card">
+						<svg viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor"
+							stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+							<polyline points="15 18 9 12 15 6"></polyline>
+						</svg>
+					</button>
+					<button id="nextBtn" class="control next-chevron-btn" aria-label="Next card">
+						<svg viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor"
+							stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+							<polyline points="9 18 15 12 9 6"></polyline>
+						</svg>
+					</button>
+				</div>
+
+				<button id="openBtn" class="open-btn" aria-label="Open envelope">
+					Click here to open envelope <span class="arrow">➔</span>
+				</button>
+
+				<button id="closeBtn" class="control close-btn" aria-label="Close envelope">
+					Close Envelope
+				</button>
+			</div>
 		</div>
 	</div>
 	<script src="script.js"></script>
